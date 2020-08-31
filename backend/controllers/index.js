@@ -1,4 +1,6 @@
-import db from '../backend/database/models';
+import db from '../database/models';
+
+
 
 export const taskObject = {
     async createTask(req, res) {
@@ -8,7 +10,7 @@ export const taskObject = {
                     error: 'Please specify title of the tasks'
                 })
             }
-            const task = await db.Task.create(req.body.title);
+            const task = await db.Task.create(req.body);
             return res.status(201).json({
                 task
             })
