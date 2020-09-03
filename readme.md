@@ -14,3 +14,5 @@ e. Express - external package for router
 
 
 d.  JS/Jquery - to control HTML tag or add events
+
+INSERT INTO tasks (title,createdAt,updatedAt) values ('Go to the Gym', now(), now()), ('Hook up with Sara', now(), now()),('Check up on Will', now(), now()),('Say hi to Paula', now(), now()),('Talk to Tom', now(), now());
